@@ -42,6 +42,8 @@ def generate():
         docx_file = fill_template(data)
         return send_file(docx_file, as_attachment=True, download_name="vozrazhenie.docx")
 
-if __name__ == '__main__':
-    app.run(host="0.0.0.0", port=10000)
+application = app
+
+
+
 

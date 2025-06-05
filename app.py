@@ -23,7 +23,7 @@ def extract_data_from_pdf(pdf_path):
     return data
 
 def fill_template(data):
-    doc = Document("ШАБЛОН_GPT_ЧИСТЫЙ.docx")
+    doc = Document("ШАБЛОН_GPT_ЧИСТЫЙ (1).docx")
     for para in doc.paragraphs:
         for key, value in data.items():
             para.text = para.text.replace(f"<<{key}>>", value)
